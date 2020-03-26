@@ -1,6 +1,8 @@
 const crypto = require('crypto');
 const connection = require('../database/connection');
 
+/* tururu */
+
 module.exports = {
     async index(request, response){
         const ongs = await connection('ongs').select('*');
